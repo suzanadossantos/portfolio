@@ -1,0 +1,54 @@
+@media screen and (max-width: 800px){
+    header p{
+        font-size: 1.6em;
+    }
+
+    h1.line{
+        font-size: 1.2em;
+    }
+
+    h2{
+        font-size: 1.2em;
+    }
+
+    .progr h2{
+        font-size: 1.2em;
+    }
+
+    .progr .cont1{
+        font-size: 0.8em;
+        margin-top: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .progr .cont3{
+        font-size: 0.8em;
+        margin-top: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .progr .cont2{
+        font-size: 0.8em;
+        margin-top: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .habilid .simb{
+        flex-direction: column;
+    }
+
+    .habilid .simb img{
+        width: 10vw;
+    }
+
+    .projetos p.titulo{
+        font-size: 1em;
+    }
+
+    .cont .simb{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,261 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+:root{
+    --cinza: #E5E5E5;
+    --preto: #000000;
+    --branco: #FFFFFF;
+    --azul: #279EE8;
+    --azul2: #03619C;
+
+    --fonte-prin: 'Lato', Arial, sans-serif;
+    --font-sec: 'Satisfy', cursive; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: var(--fonte-prin);
+    color: var(--preto);
+    background-color: var(--preto);
+}
+
+/* HEADER */
+
+header{
+    background-color: var(--branco);
+    text-align: center;
+    padding-top: 20px;
+    width: 100%;
+    height: 15vh;
+}
+
+header p{
+    font-family: var(--font-sec);
+    font-size: 2em; 
+    text-shadow: 1px 1px 0.4px #0000004d;
+}
+
+/* MAIN */
+
+main{
+    background-color: var(--branco);
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* DIV de apresentação */
+
+.apres{
+    background-image: url("https://images.pexels.com/photos/1194713/pexels-photo-1194713.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1.line{
+    border-right: 2px solid rgba(255, 255, 255, .75);
+    color: var(--branco);
+    font-family: var(--fonte-prin);
+    font-size: 1.8em;
+    text-align: center;
+    margin: auto;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.typing-animation{
+    animation:  blinkcursor 500ms steps(20) infinite normal, typing 4s steps(40) 1s normal both;
+}
+
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 12em;
+    }
+}
+
+@keyframes blinkcursor{
+    from{
+        border-right-color: rgba(255, 255, 255, .75);
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+
+/* DIV de progresso */
+
+.progr{
+    font-family: var(--fonte-prin);
+    margin: 30px;
+    color: var(--preto);
+}
+
+.progr h2{
+    font-family: var(--fonte-prin);
+    font-size: 1.7em;
+    margin-bottom: 10px;
+}
+
+.progr .cont1, .cont3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.progr .cont2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+
+.progr .cont1 p, .cont2 p, .cont3 p{
+    font-family: var(--font-sec);
+    font-size: 1.4em;
+    color: var(--azul2);
+    width: 550px;
+}
+
+.progr .cont1 img, .cont2 img, .cont3 img{
+    width: 20vw;
+}
+
+/* DIV de habilidades */
+
+.habilid h2{
+    font-family: var(--fonte-prin);
+    margin: 30px;
+    color: var(--preto);
+}
+
+.habilid .simb{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row;
+}
+
+.habilid .simb p{
+    color: var(--azul2);
+    font-size: 1em;
+}
+
+.habilid .simb div#js, div#html, div#css, div#figma{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+
+.habilid .simb img{
+    width: 5vw;
+}
+
+/* DIV de projetos */
+
+.proj h2{
+    font-family: var(--fonte-prin);
+    margin: 30px;
+    color: var(--preto);
+}
+
+.projetos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.projetos p.titulo{
+    font-family: var(--font-sec);
+    font-size: 1.4em;
+}
+
+.projetos img{
+    width: 40vw;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.26);
+}
+
+.projeto a{
+    color: var(--preto);
+    font-family: var(--fonte-prin);
+    font-size: 1.4em;
+}
+
+.projetos div#proj1, div#proj2, div#proj3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.projetos div#proj1 a:hover, div#proj2 a:hover, div#proj3 a:hover{
+    color: var(--azul2);
+    font-size: large;
+    transition: 2ms;
+}
+
+/* DIV de contato */
+
+.cont h2{
+    font-family: var(--fonte-prin);
+    margin: 30px;
+    color: var(--preto);
+}
+
+.cont .simb{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row;
+}
+
+.cont .simb p{
+    color: var(--azul2);
+    font-size: 1em;
+}
+
+.cont .simb img{
+    width: 7vw;
+}
+
+.cont .simb div#github, div#linkedin, div#instagram{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cont .simb div#github img:hover , div#linkedin img:hover, div#instagram img:hover{
+    background-color: var(--azul);
+    border-radius: 50%;
+}
