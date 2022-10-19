@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+/*--- Para todas as telas > 650px ---*/
+@media screen and (min-width: 650px){
+    body{
+        background-color: aqua;
+    }
+
+    header div #logo{
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 650px) and (max-width: 992px){
+    body{
+        background-color: rgb(206, 218, 39);
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    body{
+        background-color: rgb(28, 233, 45);
+    }
+}
+
+@media screen and (min-width: 1200px){
+    body{
+        background-color: rgb(233, 28, 28);
+    }
+
+    header div #logo{
+        width: 20%;
+    }
+}
