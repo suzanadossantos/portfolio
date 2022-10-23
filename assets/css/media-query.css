@@ -21,6 +21,28 @@
     body{
         background-color: rgb(28, 233, 45);
     }
+
+    p.line{
+        border-right: 2px solid rgba(255, 255, 255, 0);
+        text-align: left;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    
+    .typing-animation{
+        animation:  blinkcursor 500ms steps(40) infinite normal, typing 4s steps(40) 1s normal both;
+    }
+
+    #projetos div.itens{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    #projetos div.itens div.item div.info p:hover{
+        text-decoration: underline;
+    }
 }
 
 @media screen and (min-width: 1200px){
@@ -30,5 +52,45 @@
 
     header div #logo{
         width: 20%;
+    }
+
+    p.line{
+        border-right: 2px solid rgba(255, 255, 255, 0);
+        text-align: left;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    
+    .typing-animation{
+        animation:  blinkcursor 500ms steps(40) infinite normal, typing 4s steps(40) 1s normal both;
+    }
+
+    #projetos div.itens{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    #projetos div.itens div.item div.info p:hover{
+        text-decoration: underline;
+    }
+}
+
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 50%;
+    }
+}
+
+@keyframes blinkcursor{
+    from{
+        border-right-color: rgba(255, 255, 255, .75);
+    }
+    to{
+        border-right-color: transparent;
     }
 }
