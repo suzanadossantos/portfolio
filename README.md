@@ -8,7 +8,7 @@ Esse projeto foi desenvolvido por @suzanadossantos.
 
 ## Objetivo 🎯
 
-O seu objetivo é organizar minhas informações de habililidade, contato e outras em um só lugar.
+O seu objetivo é organizar minhas informações de habilidade, contato e outras em um só lugar.
 
 ## Imagens 🖼️
 
