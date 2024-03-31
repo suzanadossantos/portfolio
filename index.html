@@ -5,178 +5,132 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Suzana dos Santos</title>
+    <title>Portfolio - Suzana dos Santos</title>
+    <link rel="shortcut icon" href="assets/imagens/code_icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/media-query.css">
-    <link rel="shortcut icon" href="assets/imagens/favicon.png" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/5ae26a9ab2.js" crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
     <header>
-        <div>
-            <img src="assets/imagens/logo.png" alt="logo" id="logo"> 
-            <img src="assets/imagens/menu.png" alt="menu" onclick="menu()" id="menu">
+        <div class="logo">
+            <i class="fa-solid fa-code"></i>
+            <p>Suzana dos Santos</p>
+            <i class="fa-solid fa-code"></i>
         </div>
-
-        <menu id="itens">
-            <ul>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#habili">Habilidades</a></li>
-                <li><a href="#contato">Contato</a></li>    
-            </ul>
-        </menu>
+        <nav>
+            <a href="#sobremim">Sobre mim</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </nav>
     </header>
+    
+    <hr>
 
     <main>
-        <section id="inicio">
-            <div class="conteudo">
-                <h1>Olá, meu nome é Suzana dos Santos!</h1>
-                <p class="line typing-animation">Desenvolvedora Front-End | Engenheira de Software</p>
-
-                <ul>
-                    <li>Tenho 19 anos</li>
-                    <li>Estou cursando Engenharia de Software</li>
-                    <li>Estudando JavaScript e React</li>
-                </ul>
-                <button> 
-                    <img src="assets/imagens/download.png" alt="download"> <a href="assets/curriculo.png" target="_blank">Currículo</a>
-                </button>
+        <div class="apresentacao">
+            <h1>Olá! Meu nome é <span>Suzana</span>.</h1>
+            <img src="assets/imagens/computer.svg" alt="computer">
+        </div>
+        <div id="sobremim">
+            <div class="title">
+                <div>|</div>
+                <h2>Sobre mim</h2>
             </div>
-
-            <div class="imagem">
-                <img src="assets/imagens/imagem.svg" alt="desenvolvendo">
+            <div class="icons_informacoes">
+                <div class="icons">
+                    <i class="fa-brands fa-js"></i>
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-react"></i>
+                    <i class="fa-brands fa-java"></i>
+                    <i class="fa-brands fa-postegre"></i>
+                </div>
+                <div class="informacoes">
+                    <h3>Meu nome é Suzana dos Santos Silva e estou cursando <span>engenharia de software</span>. Eu adoro resolver problemas, criar soluções e ajudar pessoas. </h3>
+                </div>
             </div>
-        </section>
-
-        <section id="projetos">
-            <h1>Projetos</h1>
-
-            <div class="itens">
-                <div class="item">
-                    <a href="https://suzanadossantos.github.io/my_books/"><img src="assets/imagens/projetos/imagem1.png" alt="My Books"></a>
-
-                    <h2>My Books</h2>
-                    <p class="sobre">Plataforma de leitura online</p>
-
-                    <div class="info">
-                        <p><a href="https://github.com/suzanadossantos/my_books">Repositório</a></p>
-                        <p><a href="https://suzanadossantos.github.io/my_books/">Site</a></p>
+        </div>
+        <div id="projetos">
+            <div class="title">
+                <div>|</div>
+                <h2>Projetos</h2>
+            </div>
+            <div class="imagens">
+                <div class="imagem">
+                    <img src="https://github.com/suzanadossantos/spidercord/raw/main/imagens_projeto/imagem1.png" alt="projeto spidercord">
+                    <div class="detalhes">
+                        <p>Spidercord</p>
+                        <span>#discorde #alura</span>
+                        <button><a href="https://spidercord.vercel.app/" target="_blank">Site</a></button>
+                        <button><a href="https://github.com/suzanadossantos/spidercord" target="_blank">Repositório</a></button>
                     </div>
                 </div>
 
-                <div class="item">
-                    <a href="https://suzanadossantos.github.io/game-store/"><img src="assets/imagens/projetos/imagem2.png" alt="GameStore"></a>
-
-                    <h2>GameStore</h2>
-                    <p class="sobre">Loja digital de jogos</p>
-
-                    <div class="info">
-                        <p><a href="https://github.com/suzanadossantos/game-store">Repositório</a></p>
-                        <p><a href="https://suzanadossantos.github.io/game-store/">Site</a></p>
+                <div class="imagem">
+                    <img src="https://user-images.githubusercontent.com/94690066/181062306-393f903d-a986-47df-b139-20d483606d57.png" alt="projeto clone do Disney+">
+                    <div class="detalhes">
+                        <p>Disney Plus</p>
+                        <span>#disney+ #clone #grupo</span>
+                        <button><a href="https://disney-plus-nu.vercel.app/" target="_blank">Site</a></button>
+                        <button><a href="https://github.com/suzanadossantos/disneyPlus" target="_blank">Repositório</a></button>
                     </div>
                 </div>
-
-                <div class="item">
-                    <a href="https://spidercord.vercel.app/"><img src="assets/imagens/projetos/imagem3.png" alt="Spidercord"></a>
-
-                    <h2>Spidercord</h2>
-                    <p class="sobre">Chat inspirado no discord</p>
-
-                    <div class="info">
-                        <p><a href="https://github.com/suzanadossantos/spidercord">Repositório</a></p>
-                        <p><a href="https://spidercord.vercel.app/">Site</a></p>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <a href="https://disney-plus-nu.vercel.app/"><img src="assets/imagens/projetos/imagem4.png" alt="DisneyPlus"></a>  
                     
-                    <h2>DisneyPlus</h2>
-                    <p class="sobre">Página inicial do Disney+</p>
-
-                    <div class="info">
-                        <p><a href="https://github.com/suzanadossantos/disneyPlus">Repositório</a></p>
-                        <p><a href="https://disney-plus-nu.vercel.app/">Site</a></p>
+                <div class="imagem">
+                    <img src="https://private-user-images.githubusercontent.com/94690066/305737005-eaaf2d17-617a-4f28-bb07-9845b5887652.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTE4OTU1MjIsIm5iZiI6MTcxMTg5NTIyMiwicGF0aCI6Ii85NDY5MDA2Ni8zMDU3MzcwMDUtZWFhZjJkMTctNjE3YS00ZjI4LWJiMDctOTg0NWI1ODg3NjUyLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMzElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzMxVDE0MjcwMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWI5MmNiMDI0OThmYzIzMmUwNTE2NzU1ZmJkMzZlYTViZjhiODhlMmJlN2Q3ZDdkZWI3MTBjYjZmMjE3OTc1MjkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.Q1K4_6STxf4jjfDaIjEJAwOuMxmXy3iIP6itvvufW40" alt="projeto clone do Spotify">
+                    <div class="detalhes">
+                        <p>Spotify</p>
+                        <span>#spotify #clone #alura</span>
+                        <button><a href="https://suzanadossantos.github.io/Spotify/" target="_blank">Site</a></button>
+                        <button><a href="https://github.com/suzanadossantos/Spotify" target="_blank">Repositório</a></button>
                     </div>
-                </div>
-            </div>
-
-            <p id="proj"><a href="https://github.com/suzanadossantos">Mais projetos</a></p>
-        </section>
-
-        <section id="habili">
-            <h1>Habilidades</h1>
-
-            <div class="itens">
-                <div class="item">
-                    <img src="assets/imagens/habilidades/js.png" alt="JavaScript">
-                    <p>JavaScript</p>
-                </div>
-
-                <div class="item">
-                 <img src="assets/imagens/habilidades/html2.png" alt="HTML"> 
-                 <p>HTML</p>
-                </div>
+                </div> 
                 
-                <div class="item">
-                   <img src="assets/imagens/habilidades/css.png" alt="CSS"> 
-                   <p>CSS</p>
+                <div class="imagem">
+                    <img src="assets/imagens/my_books.png" alt="projeto My Books">
+                    <div class="detalhes">
+                    <p>My Books</p>
+                    <span>#livros #plataforma</span>
+                    <button><a href="https://suzanadossantos.github.io/my_books/" target="_blank">Site</a></button>
+                    <button><a href="https://github.com/suzanadossantos/my_books" target="_blank">Repositório</a></button>
+                </div>
+            </div>   
+
+            <button><a href="https://github.com/suzanadossantos">Mais projetos</a></button>
+            </div>
+        </div>
+        <div id="contato">
+            <div class="title">
+                <div>|</div>
+                <h2>Contato</h2>
+            </div>
+            <div class="links_imagem">
+                <div class="links">
+                    <div>
+                        <i class="fa-brands fa-github"></i>
+                        <button><a href="https://github.com/suzanadossantos">Acessar</a></button>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <button><a href="https://www.linkedin.com/in/suzana-dos-santos-dev/">Acessar</a></button>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>suzanadesenvolvedora@gmail.com</p>
+                    </div>
                 </div>
 
-                <div class="item">
-                   <img src="assets/imagens/habilidades/react.png" alt="React"> 
-                   <p>React</p>
-                </div>
-
-                <div class="item">
-                    <img src="assets/imagens/habilidades/java.png" alt="Java">
-                    <p>Java</p>
+                <div class="imagem">
+                    <img src="assets/imagens/phone.svg" alt="telefone">
                 </div>
             </div>
-        </section>
-
-        <section id="contato">
-            <h1>Contato</h1>
-
-            <div class="conteudo">
-                <img src="assets/imagens/contato/imagem.svg" alt="imagem contato" class="principal">
-
-                <div class="itens">
-                    <div class="item">
-                        <img src="assets/imagens/contato/linkedin.png" alt="linkedin">
-                        <p class="destaque"><a href="https://www.linkedin.com/in/suzana-dos-santos-dev/">suzana-dos-santos-dev</a></p>
-                    </div>
-
-                    <div class="item">
-                        <img src="assets/imagens/contato/github.png" alt="github">
-                        <p class="destaque"><a href="https://github.com/suzanadossantos">suzanadossantos</a></p>
-                    </div>
-
-                    <div class="item">
-                        <img src="assets/imagens/contato/email.png" alt="email">
-                        <p>suzanadesenvolvedora2gmail.com</p>
-                    </div>
-
-                    <div class="item">
-                        <img src="assets/imagens/contato/contato.png" alt="contato">
-                        <p>(21) 99318-1689</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+            
+        </div>
     </main>
 
-    <footer>
-        <div>
-            <p>Desenvolvido por <strong>Suzana</strong></p>
-        </div>
-    </footer>
-
-    <button onclick="topFunction()" id="myBtn" class="pulse" title="Go to top">
-        <i class="fa-solid fa-arrow-up"></i>
-    </button>
-
+    <script src="https://kit.fontawesome.com/5ae26a9ab2.js" crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>
 </body>
 

@@ -1,127 +1,60 @@
 @charset "UTF-8";
 
-/*--- Para todas as telas > 650px ---*/
-@media screen and (min-width: 650px){
-    header div #logo{
-        width: 25%;
-    }
-}
-
-@media screen and (min-width: 650px) and (max-width: 992px){
-    section#habili .itens{
-        display: flex;
+/*--- Para todas as telas > 750px ---*/
+@media screen and (min-width: 750px){
+    header{
         flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-}
-
-@media screen and (min-width: 992px) and (max-width: 1200px){  
-    p.line{
-        border-right: 2px solid rgba(255, 255, 255, 0);
-        text-align: left;
-        white-space: nowrap;
-        overflow: hidden;
     }
     
-    .typing-animation{
-        animation:  blinkcursor 500ms steps(40) infinite normal, typing 4s steps(40) 1s normal both;
+    header nav a:hover{
+        color: var(--blue);
     }
 
-    #projetos div.itens{
-        display: flex;
+    main div.apresentacao {
         flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
-    #projetos div.itens div.item div.info p:hover{
-        text-decoration: underline;
-    }
-
-    section#habili .itens{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-    
-    section#contato div.conteudo {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
         justify-content: space-around;
-        padding-top: 10px;
     }
 
-    section#contato div.conteudo img.principal{
-        display: block;
-        width: 300px;
-    }
-}
-
-@media screen and (min-width: 1200px){
-    header div #logo{
-        width: 20%;
+    main div.apresentacao img{
+        width: 30%;
     }
 
-    p.line{
-        border-right: 2px solid rgba(255, 255, 255, 0);
-        text-align: left;
-        white-space: nowrap;
-        overflow: hidden;
+    main .title h2{
+        font-size: 1.4em;
     }
     
-    .typing-animation{
-        animation:  blinkcursor 500ms steps(40) infinite normal, typing 4s steps(40) 1s normal both;
+    main .title div{
+        color: #3658C1;
+        font-size: 2.9em;
     }
 
-    #projetos div.itens{
-        display: flex;
+    main div.icons i{
+        font-size: 2.0em;
+    }
+
+    main div.icons i:hover{
+        cursor: pointer;
+        color: var(--blue);
+    }
+
+    main div.informacoes{
+        font-size: 1.2em;
+    }
+
+    main div#contato div.links_imagem{
         flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
-    #projetos div.itens div.item div.info p:hover{
-        text-decoration: underline;
-    }
-
-    section#habili .itens{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
-    section#contato div.conteudo {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
         justify-content: space-around;
-        padding-top: 10px;
     }
 
-    section#contato div.conteudo img.principal{
-        display: block;
-        width: 300px;
+    main div#contato div.links{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 20px;
     }
-}
 
-@keyframes typing{
-    from{
-        width: 0;
-    }
-    to{
-        width: 50%;
-    }
-}
-
-@keyframes blinkcursor{
-    from{
-        border-right-color: rgba(255, 255, 255, .75);
-    }
-    to{
-        border-right-color: transparent;
+    button{
+        cursor: pointer;
     }
 }

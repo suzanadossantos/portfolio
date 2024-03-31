@@ -1,20 +1,11 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root{
-    --titulo: 'Times New Roman', Times, serif;
-    --subtitulo_conteudo: Arial, Helvetica, sans-serif;
-
-    --subtitulo_bold: bold;
-
-    --titulo_tam: 1.4rem;
-    --subtitulo_tam: 1.2rem;
-    --conteudo_tam: 1rem;
-
-    --preto: #000000;
-    --branco: #FFFFFF;
-    --azul1: #2A6BF5;
-    --azul2: #255FDB;
-    --azul3: #091736;
+    --black: #000000;
+    --white: #FFFFFF;
+    --blue: #3658C1;
 }
 
 *{
@@ -25,332 +16,235 @@
 }
 
 body{
-    font-family: var(--subtitulo_conteudo);
-    background-color: var(--branco);
+    font-family: "Roboto", sans-serif;
+    background-color: var(--black);
     width: 100%;
     height: 100%;
 }
 
-/* HEADER */
+/* Header */
 
 header{
-    position: fixed;
     width: 100%;
-    top: 0;
-    left: 0;
     padding: 10px;
-    z-index: 2;
-    box-shadow: 1px 1.6px 3px rgba(0, 0, 0, 0.13);
-    z-index: 2;
-    background-color: var(--branco);
-}
-
-header div{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header div #logo{
-    width: 40%;
-    margin: 10px;
-}
-
-header div #menu{
-    cursor: pointer;
-    width: 30px;
-    margin: 10px;
-}
-
-menu#itens{
+    margin: 15px 0;
+    background-color: transparent;
+    color: var(--white);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    text-align: end;
-    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
 }
 
-menu#itens ul{
-    list-style: none;
+header .logo{
+    display: flex;
+    gap: 10px;
+    font-weight: bold;
 }
 
-menu#itens ul li{
-    font-family: var(--subtitulo_conteudo);
-    font-size: var(--subtitulo_tam);
-    cursor: pointer;
-    margin: 15px;
+header .fa-code{
+    color: var(--blue);
 }
 
-menu#itens ul li:hover{
-    font-weight: var(--subtitulo_bold);
+header nav{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
 }
 
-menu#itens ul li a{
-    color: var(--preto);
+header nav a{
+    text-decoration: none;
+    color: var(--white);
 }
 
-/* MAIN */
+/* Main */
 
 main{
-    width: 100%;
-    margin-top: 90px;
+    color: var(--white);
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9em;
 }
 
-/* ---Inicio--- */
-
-section#inicio{
-    background-color: var(--azul3);
-    color: var(--branco);
-    margin: 15px;
-    padding: 10px;
-    width: 90%;
-    margin: auto;
-    border: 2px solid #ad191900;
-}
-
-#inicio div.conteudo h1{
-    font-family: var(--titulo);
-    font-size: var(--titulo_tam);
-    padding: 5px;
-    margin-left: 5px;
-}
-
-#inicio div.conteudo p{
-    font-family: var(--subtitulo_conteudo);
-    font-size: var(--subtitulo_tam);
-    padding: 5px;
-    margin-left: 5px;
-}
-
-#inicio div.conteudo ul{
-    margin-top: 10px;
-}
-
-#inicio div.conteudo ul li{
-    margin-left: 35px;
-}
-
-#inicio div.conteudo button{
+main div.apresentacao {
     display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
     align-items: center;
     gap: 5px;
-    border: 1px solid var(--preto);
-    border-radius: 5px;
-    padding: 5px 20px;
-    cursor: pointer;
-    margin-left: 10px;
-    margin-top: 20px;
-    background-color: var(--branco);
+    margin: 25px 0;
+    margin-top: 15px;
+    font-size: 0.8em;
 }
 
-#inicio div.conteudo button:hover{
-    opacity: 0.9;
+main div.apresentacao  h1 span{
+    color: var(--blue);
 }
 
-#inicio div.conteudo button img{
-    width: 20px;
+main div.apresentacao img{
+    width: 50%;
 }
 
-#inicio div.conteudo button a{
-    color: var(--preto);
-}
-
-#inicio div.imagem{
-    display: none;
-}
-
-/* ---Projetos--- */
-
-section#projetos{
-    margin: 15px auto;
-    padding: 10px;
-    width: 90%;
-    border: 2px solid var(--preto);
-}
-
-#projetos h1{
-    font-family: var(--titulo);
-    text-align: center;
-}
-
-#projetos div.itens{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 25px;
-}
-
-#projetos div.itens div.item{
-    padding: 20px;
-}
-
-#projetos div.itens div.item img{
-    border: 2px solid var(--preto);
-    border-radius: 5px;
-    width: 300px;
-    cursor: pointer;
-}
-
-#projetos div.itens div.item img:hover{
-    opacity: 0.8;
-}
-
-#projetos div.itens div.item h2{
-    font-family: var(--titulo);
-}
-
-#projetos div.itens div.item p.sobre{
-    font-family: var(--subtitulo_conteudo);
-    font-weight: var(--subtitulo_bold);
-    padding-top: 5px;
-}
-
-#projetos div.itens div.item div.info{
-    margin-top: 10px;
-}
-
-#projetos div.itens div.item div.info p{
-    font-family: var(--subtitulo_conteudo);
-    padding-top: 5px;
-    cursor: pointer;
-}
-
-#projetos div.itens div.item div.info p a{
-    color: var(--preto);
-}
-
-#projetos p#proj{
-    cursor: pointer;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    text-decoration: underline;
-    text-align: center;
-}
-
-#projetos p#proj a{
-    color: var(--preto);
-}
-
-/* ---Habilidades--- */
-
-section#habili{
-    background-color: var(--azul3);
-    color: var(--branco);
-    margin: 15px;
-    padding: 10px;
-    width: 90%;
-    margin: auto;
-    border: 2px solid #ad191900;
-}
-
-section#habili h1{
-    font-family: var(--titulo);
-    font-size: var(--titulo_tam);
-    padding: 5px;
-    text-align: center;
-}
-
-section#habili .itens{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 25px;
-}
-
-section#habili .itens .item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 20px;
-}
-
-section#habili .itens .item img{
-    width: 60px;
-    height: 80px;
-}
-
-section#habili{
-    margin-bottom: 15px;
-}
-
-/* ---Contato--- */
-
-section#contato{
-    margin: 15px auto;
-    padding: 10px;
-    width: 90%;
-    border: 2px solid var(--preto);
-}
-
-section#contato h1{
-    font-family: var(--titulo);
-    font-size: var(--titulo_tam);
-    padding: 5px;
-    text-align: center;
-}
-
-section#contato div.conteudo img.principal{
-    display: none;
-}
-
-section#contato div.conteudo .itens{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding-left: 20px;
-    padding-top: 10px;
-}
-
-section#contato div.conteudo .itens .item{
+main .title{
     display: flex;
     flex-direction: row;
+    justify-content: left;
     align-items: center;
+    gap: 10px;
+    margin: 25px;
+}
+
+main .title h2{
+    font-size: 1.2em;
+}
+
+main .title div{
+    color: #3658C1;
+    font-size: 2.7em;
+}
+
+main div.icons_informacoes{
+    display: flex;
+    flex-direction: column-reverse;
     justify-content: center;
-    gap: 15px;
+    align-items: center;
+    gap: 5px;
+    margin: 25px 0;
+    margin-top: 15px;
 }
 
-section#contato div.conteudo .itens .item p.destaque a{
-    cursor: pointer;
-    text-decoration: underline;
-    color: var(--preto);
+main div.icons i{
+    font-size: 1.5em;
+    padding: 0 5px;
 }
 
-section#contato div.conteudo .itens .item img{
-    width: 40px;
+main div.informacoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
 }
 
-/* FOOTER */
-
-footer{
-    width: 100%;
-}
-
-footer div{
-    background-color: var(--azul3);
-    padding: 15px;
+main div.informacoes h3{
     text-align: center;
-    color: white;
+    width: 60%;
 }
 
-/* Scroll to top */
+main div.informacoes h3 span{
+    color: var(--blue);
+}
 
-#myBtn{
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
+main div#projetos{
+    margin-top: 25px;
+}
+
+main div.imagens{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+main div#projetos div.imagem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+main div.imagem img{
+    border: 2.3px solid #3658C1;
+    width: 50%;
+}
+
+main div#projetos div.imagem .detalhes{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+main div#projetos div.imagem .detalhes p{
+    font-size: 1.2em;
+}
+
+main div#projetos div.imagem .detalhes span{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 1.0em;
+}
+
+main div#projetos button{
+    font-size: 1.0em;
+    padding: 5px 20px;
+    margin: 5px;
+    background-color: transparent;
+    color: var(--white);
+    border: 1.7px solid var(--blue);
+    border-radius: 10px;
+}
+
+main div#projetos button a{
+    color: var(--white);
+}
+
+main div#contato{
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+main div#contato div.links_imagem{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+main div#contato div.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+main div#contato div.links div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+main div#contato div.links div i{
+    font-size: 1.5em;
+}
+
+main div#contato div.links div button{
+    font-size: 1.0em;
+    padding: 5px 20px;
+    margin: 5px;
+    background-color: transparent;
+    color: var(--white);
+    border: 1.7px solid var(--blue);
+    border-radius: 10px;
+}
+
+main div#contato div.links div button a{
+    color: var(--white);
+}
+
+main div#contato div.imagem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+main div#contato div.imagem img{
     border: none;
-    background-color: var(--azul2);
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 20%;
 }
