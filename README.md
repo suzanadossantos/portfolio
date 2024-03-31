@@ -31,7 +31,6 @@ O seu objetivo é organizar minhas informações de habilidade, contato e outras
 
 ### Projeto 
 - [Acessar site](https://suzanadossantos.github.io/portfolio/)
-- [Figma](https://www.figma.com/file/Mp4bojlTTDnjALrBqoxkvt/Portf%C3%B3lio-2022?node-id=0%3A1)
 
 ### Sobre mim
 - [LinkedIn](https://www.linkedin.com/in/suzana-dos-santos-dev/)
