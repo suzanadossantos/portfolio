@@ -10,21 +10,18 @@ Esse projeto foi desenvolvido por @suzanadossantos.
 
 O seu objetivo é organizar minhas informações de habilidade, contato e outras em um só lugar.
 
-## Imagens 🖼️
+## Imagem 🖼️
 
-![Imagem 1](https://user-images.githubusercontent.com/94690066/200568142-d09071b9-7fdf-4ab8-91fe-590916ad4cb7.png)
+![Captura de Tela (135)](https://github.com/suzanadossantos/portfolio/assets/94690066/400d54bb-1ee7-4716-8d48-78aff97d062e)
 
-![Imagem 2](https://user-images.githubusercontent.com/94690066/200568172-986b07f9-884e-47ea-bcf2-17997eb48061.png)
 
 ## Funcionalidades ✨
 
-- Download do meu curriculo
 - Acesso as meus repositórios dos projetos
-- Acesso os meus contatos: número, email, linkedIn...
+- Acesso os meus contatos: email, linkedIn...
 
 ## Tecnologias e ferramentas 🛠️
 
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 <br>
